@@ -8,7 +8,7 @@ class Contato {
     this.nome = nome
     this.email = email
     this.numero = numero
-    this.id = 4
+    this.id = id
   }
 }
 

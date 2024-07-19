@@ -18,7 +18,7 @@ const Cadastro = () => {
 
   const cadastrarTarefa = (evento: FormEvent) => {
     evento.preventDefault()
-    const tarefaParaAdicionar = new Contato(nome, email, numero, 4)
+    const tarefaParaAdicionar = new Contato(nome, email, numero, 9)
 
     dispatch(cadastrar(tarefaParaAdicionar))
     navigate('/')

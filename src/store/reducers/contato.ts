@@ -36,7 +36,13 @@ const contatosSlice = createSlice({
       if (contatoJaExiste) {
         alert('já existe um contato com esse nome')
       } else {
-        state.itens.push(action.payload)
+        const UltimaTarefa = state.itens[state.itens.length - 1]
+
+        const contatoNovo = {
+          ...action.payload,
+          id: UltimaTarefa ? UltimaTarefa.id + 1 : 1
+        }
+        state.itens.push(contatoNovo)
       }
     }
   }

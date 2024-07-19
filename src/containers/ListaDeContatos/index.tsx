@@ -10,7 +10,7 @@ const ListaDeTarefas = () => {
     <MainContainer>
       <ul>
         {itens.map((contact) => (
-          <li key={contact.nome}>
+          <li key={contact.id}>
             <Contato
               numero={contact.numero}
               nome={contact.nome}
